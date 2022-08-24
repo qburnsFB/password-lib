@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url("../assets/bgunsplash.jpg");
+  background-size: cover;
+  font-family: Helvetica, Arial, Verdana, Tahoma, "Trebuchet MS", sans-serif;
+  color: #444;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.EntryLibraryApp main {
+  min-width: 700px;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: left;
+}
+
+.EntryLibraryApp h1 {
+  text-align: center;
+}
+
+.EntryLibraryApp ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.EntryLibraryApp input {
+  display: block;
+  margin: 0.25rem 0 1rem;
+  width: 100%;
+  height: 35px;
+}
+
+.EntryLibraryApp label {
+  font-size: 1.25rem;
+}
+
+.EntryLibraryApp button {
+  padding: 1rem;
+  background: #387d29;
+  color: #fff;
+  border: 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.EntryLibraryApp button:hover {
+  background: #1f4b19;
+}
+
+.EntryLibraryApp .entryLibrary-errors {
+  margin: 0 0 1rem 100px;
+  width: 500px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px solid #444;
+}
+
+.EntryLibraryApp .entryLibrary-errors li {
+  margin-top: 0.5rem;
+}
