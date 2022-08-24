@@ -6,4 +6,4 @@ Lots of quick additional features could be added, like regex options, passing th
 
 # How to run
 
-`npm install` and then either run the pre-built folder with `npm run preview` or run the dev version with `npm run dev`
+`npm install` and then either run the pre-built folder with `npm run preview` or run the dev version with `npm run dev` and use the local url provided
