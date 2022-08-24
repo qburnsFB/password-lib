@@ -62,14 +62,15 @@ export const EntryLibrary = forwardRef(
             }
         }
 
+        const errorClassname = errors.length ? 'entryLibrary-hasErrors' : undefined;
 
     return (
         <form className={classNames('entryLibrary', className)} ref={ref} {...rest} onSubmit={validateSubmit}>
             {errors.length ? <ul className="entryLibrary-errors">{errors.map(error => <li key={error}>{error}</li>)}</ul> : null}
             <label htmlFor="password-entryLibrary">Password:</label>
-            <input name="password-entryLibrary" onChange={handleSetPassword} value={password} />
+            <input name="password-entryLibrary" className={errorClassname} onChange={handleSetPassword} value={password} />
             <label htmlFor="confirmPassword-entryLibrary">Confirm Password:</label>
-            <input name="confirmPassword-entryLibrary" onChange={handleSetConfirmPassword} value={confirmPassword} />
+            <input name="confirmPassword-entryLibrary" className={errorClassname} onChange={handleSetConfirmPassword} value={confirmPassword} />
             <button type="submit">Submit</button>
         </form>
     )
